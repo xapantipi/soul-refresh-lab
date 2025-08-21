@@ -159,7 +159,6 @@ const MeetingsOverview = () => {
   );
 };
 
-// Import the missing icons
 import { Calculator, TrendingUp } from "lucide-react";
 
 export default MeetingsOverview;

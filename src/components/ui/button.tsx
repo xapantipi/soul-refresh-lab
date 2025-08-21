@@ -9,16 +9,16 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-primary text-primary-foreground hover:shadow-elegant-md hover:scale-105 active:scale-95",
+        default: "bg-primary text-primary-foreground hover:bg-primary-light shadow-elegant-sm hover:shadow-elegant-md transition-all duration-200",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-elegant-sm",
         outline:
-          "border border-primary/20 bg-card text-primary hover:bg-primary/5 hover:border-primary/40 shadow-elegant-sm",
+          "border border-primary/20 bg-background hover:bg-primary/5 hover:text-primary hover:border-primary/30 shadow-elegant-sm",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary-light hover:shadow-elegant-sm",
+          "bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-elegant-sm hover:shadow-elegant-md transition-all duration-200",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-hero text-primary-foreground hover:shadow-glow hover:scale-105 active:scale-95 font-semibold",
+        link: "text-primary underline-offset-4 hover:underline hover:text-primary-light transition-colors",
+        hero: "bg-primary text-primary-foreground hover:bg-primary-light shadow-elegant-md hover:shadow-elegant-lg transition-all duration-300 font-semibold",
         premium: "bg-gradient-card border border-primary/10 text-primary hover:border-primary/30 hover:shadow-elegant-md shadow-elegant-sm"
       },
       size: {

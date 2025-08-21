@@ -114,20 +114,29 @@ const ContactForm = () => {
                 </div>
               </form>
 
-              {/* Trust Indicators */}
+              {/* Professional Trust Indicators */}
               <div className="mt-8 pt-8 border-t border-border">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-sm text-muted-foreground">
-                  <div className="flex items-center justify-center gap-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    Secure & Confidential
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                      <div className="w-3 h-3 bg-primary rounded-full"></div>
+                    </div>
+                    <div className="text-sm font-medium text-foreground">Secure & Confidential</div>
+                    <div className="text-xs text-muted-foreground">Your information is protected</div>
                   </div>
-                  <div className="flex items-center justify-center gap-2">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    Free Consultation
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center">
+                      <div className="w-3 h-3 bg-secondary rounded-full"></div>
+                    </div>
+                    <div className="text-sm font-medium text-foreground">No-Cost Consultation</div>
+                    <div className="text-xs text-muted-foreground">Free initial assessment</div>
                   </div>
-                  <div className="flex items-center justify-center gap-2">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    Expert Guidance
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                      <div className="w-3 h-3 bg-primary rounded-full"></div>
+                    </div>
+                    <div className="text-sm font-medium text-foreground">Licensed Professional</div>
+                    <div className="text-xs text-muted-foreground">20+ years experience</div>
                   </div>
                 </div>
               </div>

@@ -1,8 +1,9 @@
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import ContactForm from "@/components/ContactForm";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import EstateQuiz from "@/components/EstateQuiz";
 import MeetingsOverview from "@/components/MeetingsOverview";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -10,9 +11,10 @@ const Index = () => {
     <main className="min-h-screen">
       <HeroSection />
       <AboutSection />
-      <ContactForm />
+      <TestimonialsSection />
       <EstateQuiz />
       <MeetingsOverview />
+      <ContactForm />
       <Footer />
     </main>
   );

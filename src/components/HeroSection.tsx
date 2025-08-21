@@ -20,49 +20,61 @@ const HeroSection = () => {
               www.toddciviello.com
             </Badge>
             
-            <div className="flex items-start gap-4 mb-8">
-              <div className="w-16 h-16 rounded-full overflow-hidden shadow-elegant-md">
+            <div className="flex items-start gap-6 mb-8">
+              <div className="w-20 h-20 rounded-full overflow-hidden shadow-elegant-lg border-4 border-white">
                 <img 
                   src={portraitImage} 
-                  alt="Todd Civiello"
+                  alt="Todd Civiello - Estate Planning Professional"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
                 <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 leading-tight">
-                  Welcome from <br />
+                  <span className="text-2xl lg:text-3xl font-medium text-muted-foreground block mb-2">Professional Estate Planning</span>
                   <span className="bg-gradient-hero bg-clip-text text-transparent">
-                    Todd Civiello
+                    Todd G. Civiello
                   </span>
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  Professional estate planning and financial advisory services 
-                  with over 20 years of expertise in retirement planning.
+                <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                  Comprehensive retirement and estate planning services with over 20 years of professional expertise. 
+                  Helping families secure their financial future with strategic planning solutions.
                 </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <Badge variant="outline" className="px-3 py-1 text-sm border-primary/30 text-primary">
+                    Licensed Professional
+                  </Badge>
+                  <Badge variant="outline" className="px-3 py-1 text-sm border-primary/30 text-primary">
+                    Estate Planning Expert
+                  </Badge>
+                  <Badge variant="outline" className="px-3 py-1 text-sm border-primary/30 text-primary">
+                    20+ Years Experience
+                  </Badge>
+                </div>
               </div>
             </div>
 
             <div className="flex flex-wrap gap-4 mb-8">
               <Button variant="hero" size="lg" className="group">
-                <MessageCircle className="group-hover:scale-110 transition-transform" />
-                TEXT my Agent
+                <MessageCircle className="group-hover:scale-110 transition-transform mr-2" />
+                Start Consultation
               </Button>
               <Button variant="outline" size="lg" className="group">
-                <Phone className="group-hover:rotate-12 transition-transform" />
-                Schedule Call
+                <Phone className="group-hover:rotate-12 transition-transform mr-2" />
+                Schedule Meeting
               </Button>
-              <Button variant="ghost" size="lg" className="group">
-                <Mail className="group-hover:scale-110 transition-transform" />
-                Send Email
+              <Button variant="ghost" size="lg" className="group text-primary hover:text-primary-light">
+                <Mail className="group-hover:scale-110 transition-transform mr-2" />
+                Contact Today
               </Button>
             </div>
 
-            <div className="flex items-center gap-6 text-sm text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                Available Now
+                <span className="font-medium">Available for Consultation</span>
               </div>
-              <div>3,000+ Students Educated Annually</div>
+              <div className="font-medium">3,000+ Clients Served Annually</div>
+              <div className="font-medium">Licensed Professional</div>
             </div>
           </div>
 
